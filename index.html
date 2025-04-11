@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Dark Clone</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://unpkg.com/lucide-static@0.278.0/font/lucide.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <i class="lucide-menu"></i>
+      <div class="navbar-logo">
+        <img src="https://png.pngtree.com/png-clipart/20221018/ourmid/pngtree-youtube-social-media-3d-stereo-png-image_6308427.png" alt="YouTube" />
+      </div>
+    </div>
+    <div class="navbar-center">
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar" />
+        <button><i class="lucide-search"></i></button>
+      </div>
+      <button class="mic-button"><i class="lucide-mic"></i></button>
+    </div>
+    <div class="navbar-right">
+      <i class="lucide-video"></i>
+      <i class="lucide-bell"></i>
+      <div class="avatar">
+        <img src="data:image/png;base64,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" class="avatar">
+         </div>
+    </div>
+  </div>
+
+    <!-- Video principal -->
+  <div class="main">
+    <div class="main-content">
+      <div class="video-section">
+        <div class="video-container">
+          <video src="/midia/Kaytranada ｜ Boiler Room： Montreal.mp4" controls autoplay muted></video>
+        </div>
+        <div class="video-info">
+          <h2>Kaytranada | Boiler Room: Montreal</h2>
+          <div class="video-stats">1 bi visualizações • há 11 anos</div>
+          <div class="actions">
+            <button><i class="lucide-thumbs-up"></i>Curtir</button>
+            <button><i class="lucide-thumbs-down"></i>Não gostei</button>
+            <button><i class="lucide-share"></i>Compartilhar</button>
+            <button><i class="lucide-plus"></i>Salvar</button>
+          </div>
+          <div class="channel-info">
+            <div class="channel-avatar"></div>
+            <div class="channel-name">Boiler Room</div>
+          </div>
+        </div>
+      </div>
+      <div class="recommendations">
+        <!-- conteiner lateral com videos recomendados -->
+        <a class="recommended-video" href="https://www.youtube.com/watch?v=j5y2GBks5j4" target="_blank">
+          <img class="thumb" src="https://i.ytimg.com/vi/j5y2GBks5j4/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDsnl4YDiVDNVHjP7ayXVyJrzCzVg" alt="">
+          <div class="video-details">
+            <h4>PinkPantheress | Boiler Room London: IFFY FM Presents...</h4>
+            <p>Boiler Room</p>
+            <p>4.5M visualizações • há 8 anos</p>
+          </div>
+        </a>
+        <a class="recommended-video" href="https://www.youtube.com/watch?v=oofdTRkuc-o&pp=ygUQYm9pbGVyIHJvb20ga3lhbg%3D%3D" target="_blank">
+          <img class="thumb" src="https://i.ytimg.com/vi/oofdTRkuc-o/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDDCjmbrykAzVMRQve_dO06UyhpGA" alt="">
+          <div class="video-details">
+            <h4>Kyan | Boiler Room x Ballantine's True Music Studio: São Paulo</h4>
+            <p>Boiler Room</p>
+            <p>1.1m visualizações • há 2 meses</p>
+          </div>
+        </a>
+        <a class="recommended-video" href="https://www.youtube.com/watch?v=tYelppjbk74&t=2639s" target="_blank">
+          <img class="thumb" src="https://i.ytimg.com/vi/tYelppjbk74/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDK1sLo0xyWGKI5X4RNIQN7jqbQGQ" alt="">
+          <div class="video-details">
+            <h4>HAVA | LET HIM COOK radio - Baile Funk, Rap FR</h4>
+            <p>LETHIMCOOK radio</p>
+            <p>700 mil visualizações • há 4 meses</p>
+          </div>
+        </a>
+        <a class="recommended-video" href="https://www.youtube.com/watch?v=MkZW0whcbd0&t=6s" target="_blank">
+          <img class="thumb" src="https://i.ytimg.com/vi/MkZW0whcbd0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBbYa08xm_5F5ja0ZmTa4cA_Q6ffw" alt="">
+          <div class="video-details">
+            <h4>LANI | LET HIM COOK radio - Jersey, Baile Funk, GQOM</h4>
+            <p>LETHIMCOOK radio</p>
+            <p>2.4 mil visualizações • há 2 meses</p>
+          </div>
+        </a>
+        <a class="recommended-video" href="https://www.youtube.com/watch?v=87yKlmg3sN4&pp=ygUNc2tlcHRhIGNvbG9ycw%3D%3D" target="_blank">
+          <img class="thumb" src="https://i.ytimg.com/vi/87yKlmg3sN4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBCU9QsjF5Wl4dWflaOoiMRoolIwQ" alt="">
+          <div class="video-details">
+            <h4>Skepta - No Sleep | A COLORS SHOW</h4>
+            <p>COLORS</p>
+            <p>5.7 M visualizações • há 5 anos</p>
+          </div>
+        </a>
+        <a class="recommended-video" href="https://www.youtube.com/watch?v=fYwRsJAPfec&pp=ygUVY29sb3JzIGpvcmphIHNtaXRoIGZ0" target="_blank">
+          <img class="thumb" src="https://i.ytimg.com/vi/fYwRsJAPfec/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDXc1xS1BOFLwADzYKyV8vouWiknw" alt="">
+          <div class="video-details">
+            <h4>Jorja Smith - Blue Lights | A COLORS SHOW</h4>
+            <p>COLORS</p>
+            <p>124 M visualizações • há 6 anos</p>
+          </div>
+        </a>
+        <a class="recommended-video" href="https://www.youtube.com/watch?v=t0fn0Q0DB0E&pp=ygULc3RldmUgbGFjeSA%3D" target="_blank">
+          <img class="thumb" src="https://i.ytimg.com/vi/t0fn0Q0DB0E/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBqPefSEZ3Ku1i7WwPDjymT1ZVb5A" alt="">
+          <div class="video-details">
+            <h4>C U Girl</h4>
+            <p>Steve Lacy</p>
+            <p>11 M visualizações • há 9 anos</p>
+          </div>
+        </a>
+        <a class="recommended-video" href="https://www.youtube.com/watch?v=hM5kbaero10&pp=ygUQbWYgZG9vbSBvbmUgYmVlcg%3D%3D" target="_blank">
+          <img class="thumb" src="https://i.ytimg.com/vi/hM5kbaero10/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBl4ZMdDdMSS1u700zaw7736ISkLw" alt="">
+          <div class="video-details">
+            <h4>MF DOOM - One Beer</h4>
+            <p>John</p>
+            <p>4 M visualizações • há 6 anos</p>
+          </div>
+        </a>
+        <a class="recommended-video" href="https://www.youtube.com/watch?v=QrR_gm6RqCo&pp=ygUUdGlueSBkZXNrIG1hYyBtaWxsZXI%3D" target="_blank">
+          <img class="thumb" src="https://i.ytimg.com/vi/QrR_gm6RqCo/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB4xruLXud91GujoJyarVi_fwUC1g" alt="">
+          <div class="video-details">
+            <h4>Mac Miller: NPR Music Tiny Desk Concert</h4>
+            <p>NPR Music</p>
+            <p>131M visualizações • há 6 anos</p>
+          </div>
+        </a>
+        <a class="recommended-video" href="https://www.youtube.com/watch?v=pRpeEdMmmQ0" target="_blank">
+          <img class="thumb" src="https://i.ytimg.com/vi/N1w-hDiJ4dM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDo0fsSgAuWQetJZ7SiKoE0sYLL3A" alt="">
+          <div class="video-details">
+            <h4>Tyler, The Creator: NPR Music Tiny Desk Concert</h4>
+            <p>NPR Music</p>
+            <p>38M visualizações • há 7 anos</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
